@@ -7,6 +7,7 @@ import {
   text,
   VDOM,
 } from "hyperapp-cjs";
+import { Metadata } from "@endless-trash/prompt";
 import { formView } from ".";
 import { PromptState } from "../prompt-state";
 import { sendEffect } from "../send-effect";
@@ -380,7 +381,9 @@ describe(`formView`, () => {
                 },
                 mode: `beingSent`,
                 channelSend,
-                metadata: { testMetadataKey: `Test Metadata Value` },
+                metadata: {
+                  testMetadataKey: `Test Metadata Value`,
+                } as Metadata,
               },
               [
                 sendEffect,

@@ -45,7 +45,7 @@ describe(`applyResponse`, () => {
             },
             channelSend,
           },
-        ]);
+        ] as ActionDescriptor<DomPromptClientState, ApplyPromptProps>);
       });
 
       it(`does not send a message through the channel`, () => {
@@ -93,7 +93,7 @@ describe(`applyResponse`, () => {
         ).toEqual([
           applyMessage,
           `An unexpected response was received:\n\n{\n  "something": {\n    "which": {\n      "is": {\n        "not": {\n          "a": "prompt"\n        }\n      }\n    }\n  }\n}\n\nPlease refresh to reconnect.`,
-        ]);
+        ] as ActionDescriptor<DomPromptClientState, string>);
       });
 
       it(`does not send a message through the channel`, () => {
@@ -140,7 +140,7 @@ describe(`applyResponse`, () => {
             },
             channelSend,
           },
-        ]);
+        ] as ActionDescriptor<DomPromptClientState, ApplyPromptProps>);
       });
 
       it(`does not send a message through the channel`, () => {
@@ -188,7 +188,7 @@ describe(`applyResponse`, () => {
         ).toEqual([
           applyMessage,
           `An unexpected response was received:\n\n{\n  "something": {\n    "which": {\n      "is": {\n        "not": {\n          "a": "prompt"\n        }\n      }\n    }\n  }\n}\n\nPlease refresh to reconnect.`,
-        ]);
+        ] as ActionDescriptor<DomPromptClientState, string>);
       });
 
       it(`does not send a message through the channel`, () => {

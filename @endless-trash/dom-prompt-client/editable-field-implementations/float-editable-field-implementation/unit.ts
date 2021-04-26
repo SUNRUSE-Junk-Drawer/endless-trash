@@ -1139,7 +1139,7 @@ describe(`floatEditableFieldImplementation`, () => {
                   fieldName: `Test Field Name`,
                   raw: `Test Raw`,
                 },
-              ]);
+              ] as ActionDescriptor<State, UpdateFieldRawProps>);
             });
           }
         );
@@ -1163,7 +1163,7 @@ describe(`floatEditableFieldImplementation`, () => {
                   fieldName: `Test Field Name`,
                   raw: `Test Raw`,
                 },
-              ]);
+              ] as ActionDescriptor<State, UpdateFieldRawProps>);
             });
           }
         );

@@ -293,7 +293,7 @@ describe(`stringEditableFieldImplementation`, () => {
                   fieldName: `Test Field Name`,
                   raw: `Test Raw`,
                 },
-              ]);
+              ] as ActionDescriptor<State, UpdateFieldRawProps>);
             });
           }
         );
@@ -317,7 +317,7 @@ describe(`stringEditableFieldImplementation`, () => {
                   fieldName: `Test Field Name`,
                   raw: `Test Raw`,
                 },
-              ]);
+              ] as ActionDescriptor<State, UpdateFieldRawProps>);
             });
           }
         );

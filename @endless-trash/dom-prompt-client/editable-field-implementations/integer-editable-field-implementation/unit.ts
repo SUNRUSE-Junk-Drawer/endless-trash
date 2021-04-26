@@ -1089,7 +1089,7 @@ describe(`integerEditableFieldImplementation`, () => {
                   fieldName: `Test Field Name`,
                   raw: `Test Raw`,
                 },
-              ]);
+              ] as ActionDescriptor<State, UpdateFieldRawProps>);
             });
           }
         );
@@ -1113,7 +1113,7 @@ describe(`integerEditableFieldImplementation`, () => {
                   fieldName: `Test Field Name`,
                   raw: `Test Raw`,
                 },
-              ]);
+              ] as ActionDescriptor<State, UpdateFieldRawProps>);
             });
           }
         );
