@@ -59,7 +59,7 @@
     "strictPropertyInitialization": true,
     "esModuleInterop": false,
     "allowUmdGlobalAccess": false,
-    "keyofStringsOnly": true,
+    "keyofStringsOnly": false,
     "declarationMap": false,
     "resolveJsonModule": false,
     "lib": [
